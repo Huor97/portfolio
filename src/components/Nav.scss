@@ -7,6 +7,18 @@
   width: 100%;
   position: fixed;
   font-size: 0.9rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(70, 198, 19, 0.328),
+    rgba(0, 200, 255, 0)
+  );
+  transition: background-color 0.3s ease-in-out;
+  &--black {
+    background-color: rgba(50, 16, 51, 0.659);
+    .nav__burger {
+      color: #fff;
+    }
+  }
   &__burger {
     cursor: pointer;
     margin-left: 1rem;
@@ -29,7 +41,6 @@
       padding: 10px 10px;
       width: 100%;
       text-align: center;
-      border-bottom: solid 1px #fff;
       transition: 1s;
     }
     @media screen and (max-width: 767.98px) {
@@ -38,6 +49,9 @@
       position: absolute;
       top: 110%;
       right: 0;
+      .nav__link {
+        border-bottom: solid 1px #fff;
+      }
 
       .show & {
         display: flex;
@@ -46,8 +60,8 @@
         visibility: visible;
         width: 100%;
         height: calc(100vh - 60px);
-        top: 60px;
-        background-color: #111;
+        top: 77.8px;
+        background-color: #321033a8;
 
         .nav__link {
           color: #fff;

@@ -1,9 +1,8 @@
 import React from "react";
-import datavize from "../images/datavize.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import "./Projet.scss";
-function Projet() {
+function Projet({ title, projectImg, subtitle, vercel, github }) {
   return (
     <div className="projets container">
       <div className="projets__titles">
@@ -14,18 +13,34 @@ function Projet() {
           <div className="projets__line"></div>
         </div>
         <div className="projets__title">
-          <h2>projet titre</h2>
+          <h2>{title}</h2>
+          <p>{subtitle.decription}</p>
           <p>
-            Qui ipsum veritatis quisquam magni quo necessitatibus. Ipsam sit aut
-            quos. Occaecati quibusdam qui nam rerum praesentium sapiente
-            reiciendis. Laborum quia autem ea. Veniam quibusdam culpa velit
-            labore.…
+            {subtitle.titleVercel}
+            <a
+              href={subtitle.linkVercel}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {vercel}
+            </a>
+            <span> {subtitle.erre} </span>
+          </p>
+          <p>
+            {subtitle.titleGit}
+            <a
+              href={subtitle.gitHubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {github}
+            </a>
           </p>
         </div>
       </div>
 
       <div className="projets__images">
-        <img className="projets__image" src={datavize} alt="datavize" />
+        <img className="projets__image" src={projectImg} alt="datavize" />
       </div>
 
       <div className="space container">

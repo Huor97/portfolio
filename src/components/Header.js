@@ -2,24 +2,9 @@ import React from "react";
 import "./Header.scss";
 import Resume from "../images/karimi_alternance_CV_dévelppeur full stack_2023-2024.pdf";
 
-// import bgi from "../images/bgi-header.png";
-import bgiMobil from "../images/bgi-header-mobil.png";
-
 function Header() {
-  // const bannerStyle = {
-  //   backgroundImage: `url(${bgi})`,
-  //   backgroundSize: "cover",
-  //   backgroundPosition: "center center",
-  // };
-
-  const bannerStyleMobil = {
-    backgroundImage: `url(${bgiMobil})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
-  };
-
   return (
-    <header className="banner" style={bannerStyleMobil}>
+    <header className="banner">
       <div className="banner__presention">
         <div className="vertical">
           <div className="vertical__line"></div>

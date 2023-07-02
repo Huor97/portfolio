@@ -6,8 +6,15 @@
   align-items: center;
   height: 100vh;
   font-size: 0.9rem;
-  padding-bottom: 3rem;
   font-family: "Cinzel", serif;
+  background-image: url("../images/bgi-header-mobil.png");
+  background-size: cover;
+  background-position: center center;
+  @media screen and (min-width: 678px) {
+    background-image: url("../images/bgi-header.png");
+    background-size: cover;
+    background-position: center center;
+  }
 
   &__presention {
     width: 80%;
@@ -25,11 +32,12 @@
         top: 50%;
         margin-right: 0px;
         margin-left: 0px;
-        background: rgb(34, 193, 195);
+        background: rgb(255, 255, 255);
         background: linear-gradient(
-          0deg,
-          rgba(34, 193, 195, 1) 0%,
-          rgba(106, 253, 45, 1) 100%
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(125, 179, 51, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
         );
       }
     }
@@ -49,13 +57,12 @@
         text-align: center;
         font-size: 1.4rem;
         border-bottom: 2px solid;
-        border-image: linear-gradient(
-            90deg,
-            rgba(2, 0, 36, 0.6767039579503676) 0%,
-            rgba(34, 193, 195, 0.7271241260175945) 13%,
-            rgba(106, 253, 45, 1) 59%
+        border-image: radial-gradient(
+            circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(255, 255, 255, 1) 100%
           )
-          10 100;
+          10;
       }
       p {
         font-size: 0.6rem;
@@ -83,15 +90,17 @@
       position: relative;
       height: 145px;
       .vertical__line {
-        width: 1.5px;
+        width: 2px;
         height: 100%;
         margin-right: 0px;
         margin-left: 0;
-        background: rgb(34, 193, 195);
+        border-radius: 5px solid;
+        background: rgb(255, 255, 255);
         background: linear-gradient(
-          0deg,
-          rgba(34, 193, 195, 1) 0%,
-          rgba(106, 253, 45, 1) 100%
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(125, 179, 51, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
         );
       }
     }

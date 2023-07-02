@@ -1,0 +1,37 @@
+.skillsT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    width: 85%;
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-family: "Cinzel", serif;
+    }
+  }
+  .skilsT__names {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+
+    .skilsT__name {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 50%;
+      .skils__title {
+        color: rgba(0, 128, 255, 0.814);
+      }
+      .skils__lists {
+        display: flex;
+        list-style: none;
+
+        .skils__list {
+          margin-bottom: 1.1rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

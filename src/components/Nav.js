@@ -13,7 +13,11 @@ function Nav() {
   };
 
   return (
-    <div className={`nav ${toggleMenu && "show"} `}>
+    <div
+      className={`nav ${toggleMenu && "show"} ${
+        toggleMenu ? "nav--black" : "nav--transparant"
+      } `}
+    >
       <div className="nav__logo">
         <img src={logo} alt="r logo" width="50px" />
       </div>
@@ -24,10 +28,10 @@ function Nav() {
 
       <nav className="nav__links">
         <a href="/" className="nav__link">
-          présentation
+          projet
         </a>
         <a href="/" className="nav__link">
-          projet
+          Experience
         </a>
         <a href="/" className="nav__link">
           compétence
