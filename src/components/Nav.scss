@@ -1,0 +1,75 @@
+.nav {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4%;
+  width: 100%;
+  position: fixed;
+  font-size: 0.9rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(70, 198, 19, 0.328),
+    rgba(0, 200, 255, 0)
+  );
+  transition: background-color 0.3s ease-in-out;
+  &--black {
+    background-color: rgba(50, 16, 51, 0.659);
+    .nav__burger {
+      color: #fff;
+    }
+  }
+  &__burger {
+    cursor: pointer;
+    margin-left: 1rem;
+    color: #000000;
+    background-color: transparent;
+    svg {
+      font-size: 1.4rem;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__links {
+    margin-left: 50px;
+    transition: background-color 0.3s ease-in-out;
+
+    .nav__link {
+      text-decoration: none;
+      color: #111;
+      padding: 10px 10px;
+      width: 100%;
+      text-align: center;
+      transition: 1s;
+    }
+    @media screen and (max-width: 767.98px) {
+      margin-left: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 110%;
+      right: 0;
+      .nav__link {
+        border-bottom: solid 1px #fff;
+      }
+
+      .show & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: visible;
+        width: 100%;
+        height: calc(100vh - 60px);
+        top: 77.8px;
+        background-color: #321033a8;
+
+        .nav__link {
+          color: #fff;
+        }
+      }
+    }
+    .nav__link:hover {
+      color: aqua;
+    }
+  }
+}

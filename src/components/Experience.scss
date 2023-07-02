@@ -1,0 +1,71 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  &__title {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-family: "Cinzel", serif;
+      text-align: center;
+      width: 100%;
+      margin-top: -100px;
+      border-image: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        )
+        10;
+    }
+  }
+  &__containers {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+    .experiences__date {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5px;
+      margin-top: 10px;
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    .experiences__container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      .experiences__images {
+        display: flex;
+        .experiences__image {
+          width: 50px;
+          .experiences__logo {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .experiences__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        h2 {
+          font-size: 1.1rem;
+        }
+        p {
+          text-align: justify;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
