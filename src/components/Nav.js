@@ -3,8 +3,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/logo3.svg";
-
+import { Link as ScrollLink } from "react-scroll";
 import "./Nav.scss";
+
 function Nav() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -27,18 +28,47 @@ function Nav() {
       </button>
 
       <nav className="nav__links">
-        <a href="/" className="nav__link">
-          projet
-        </a>
-        <a href="/" className="nav__link">
-          Experience
-        </a>
-        <a href="/" className="nav__link">
-          compétence
-        </a>
-        <a href="/" className="nav__link">
-          contact
-        </a>
+        <ScrollLink
+          to="projet"
+          spy={true}
+          smooth={true}
+          offset={-75}
+          duration={500}
+          className="nav__link"
+        >
+          Projet
+        </ScrollLink>
+
+        <ScrollLink
+          to="experinece"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={500}
+          className="nav__link"
+        >
+          Expérience
+        </ScrollLink>
+        <ScrollLink
+          to="competence"
+          spy={true}
+          smooth={true}
+          offset={-75}
+          duration={500}
+          className="nav__link"
+        >
+          Compétence
+        </ScrollLink>
+        <ScrollLink
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="nav__link"
+        >
+          Contact
+        </ScrollLink>
       </nav>
     </div>
   );

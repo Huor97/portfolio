@@ -10,7 +10,7 @@ function Experience({
   titleEx,
 }) {
   return (
-    <div className="experiences">
+    <div className="experiences" id="experinece">
       <div className="experiences__title">
         <h2 style={borderBottom}>{title}</h2>
       </div>

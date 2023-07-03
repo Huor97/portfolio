@@ -4,7 +4,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import "./Projet.scss";
 function Projet({ title, projectImg, subtitle, vercel, github }) {
   return (
-    <div className="projets container">
+    <div className="projets container" id="projet">
       <div className="projets__titles">
         <div className="projets__lines">
           <div className="projets__icon">

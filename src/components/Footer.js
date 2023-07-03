@@ -20,16 +20,36 @@ function Footer() {
       <TechnicalSkills />
 
       <div className="social__networks">
-        <a href="/" className="social__network">
+        <a
+          href="https://twitter.com/k_huor"
+          className="social__network"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon="fa-brands fa-twitter" />
         </a>
-        <a href="/" className="social__network">
+        <a
+          href="https://github.com/Huor97"
+          className="social__network"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon="fa-brands fa-github-alt" />
         </a>
-        <a href="/" className="social__network">
+        <a
+          href="https://stackoverflow.com/users/14062365/roho"
+          className="social__network"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon="fa-brands fa-stack-overflow" />
         </a>
-        <a href="/" className="social__network">
+        <a
+          href="https://www.linkedin.com/in/rouhkarimi/"
+          className="social__network"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
         </a>
       </div>

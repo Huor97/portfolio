@@ -26,7 +26,7 @@ const skillsTechs = [
 ];
 function TechnicalSkills() {
   return (
-    <div className="skillsT">
+    <div className="skillsT" id="competence">
       <div className="skillsT__title">
         <h2>COMPÉTENCES TECHNIQUES</h2>
       </div>
