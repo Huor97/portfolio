@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
 .experiences {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
   &__title {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +25,7 @@
     }
   }
   &__containers {
-    width: 60%;
+    width: 78%;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -58,13 +61,18 @@
         align-items: center;
         text-align: center;
         width: 70%;
-        padding-right: 80px;
+        @media screen and (min-width: 768px) {
+          width: 85%;
+        }
+
         h2 {
           font-size: 1.1rem;
+          font-family: "Cinzel", serif;
         }
         p {
           text-align: justify;
-          font-size: 0.8rem;
+          font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          margin-top: 10px;
         }
       }
     }

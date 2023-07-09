@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
 .projets {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   &__titles {
     display: flex;
     width: 80%;
@@ -11,13 +13,64 @@
       width: 100%;
       margin-left: 15px;
       position: relative;
+      @media screen and (min-width: 678px) {
+        width: 70%;
+        .projets__paragraphe {
+          font-weight: lighter;
+        }
+      }
       h2 {
         margin-top: -5px;
         margin-bottom: 10px;
+        font-family: "Cinzel", serif;
+        font-weight: 100;
       }
-      a {
-        text-decoration: none;
-        color: blue;
+      // p {
+      //   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      //   font-weight: lighter;
+      //   padding: 32px 32px;
+      //   a {
+      //     text-decoration: none;
+      //     color: blue;
+      //     font-weight: 400;
+      //   }
+      // }
+      ul {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+      li {
+        padding: 3px 1%;
+      }
+
+      @media screen and (min-width: 768px) {
+        .projets__lists {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          .projets__cadres {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            .projets__tachs {
+              width: 48%;
+            }
+            .projets__techs {
+              width: 48%;
+            }
+          }
+          .projets__presentations {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            .projset__presentation {
+              width: 45%;
+            }
+            .projets__pres {
+              width: 52%;
+            }
+          }
+        }
       }
     }
     .projets__lines {
@@ -56,11 +109,88 @@
     }
   }
 
-  &__images {
-    width: 90%;
+  &__box {
+    width: 100%;
+    @media screen and (min-width: 678px) {
+      display: flex;
+      justify-content: flex-start;
+    }
 
-    .projets__image {
-      width: 100%;
+    .projets__container {
+      width: 90%;
+      border-radius: 0px 5px 0px 0;
+      @media screen and (min-width: 678px) {
+        width: 80%;
+        box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+        -webkit-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+        -moz-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+      }
+      background: rgb(0, 74, 173);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 74, 173, 1) 0%,
+        rgba(203, 108, 230, 1) 100%
+      );
+      box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+      -webkit-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+      -moz-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+      padding: 12px 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .projets__tols {
+        h2 {
+          margin-bottom: 10px;
+          #react__title {
+            color: #eeefef;
+          }
+          #scss__title {
+            color: #b313d3;
+          }
+        }
+      }
+
+      .projets__images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+        .projets__imagepc {
+          width: 90%;
+          @media screen and (min-width: 768px) {
+            width: 65%;
+            padding-top: 15px;
+            padding-bottom: 25px;
+          }
+        }
+        .projets__imagemobil {
+          width: 90%;
+          @media screen and (min-width: 768px) {
+            width: 200px;
+            z-index: 1;
+            position: absolute;
+            right: 30%;
+          }
+          .imagemobil__container {
+            width: 120px;
+
+            @media screen and (min-width: 768px) {
+              width: 100%;
+              img {
+                height: 400px;
+                border-radius: 5px;
+                box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+                -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+                -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              }
+            }
+          }
+        }
+      }
     }
   }
 
