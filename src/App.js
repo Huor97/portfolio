@@ -14,12 +14,7 @@ const descriptionWonderFlower = {
   decription: `Site e-commerce de vente de fleurs : ce projet a été réalisé en équipe de 9 personnes. 👪 
     Tout d'abord, nous avons consacré 2 jours à la conception des choix d'architecture technique 
     et des fonctionnalités 👥 Cependant, la gestion de projet s'est faite en mode Agile/MVP, avec 
-    une répartition des tâches à l'aide de post-it. L'équipe a été divisée en deux groupes, l'un 
-    pour le développement du front-end et l'autre pour le back-end, pendant la première semaine. 
-    Puis, les rôles ont été inversés la seconde semaine. En ce qui concerne les technologies utilisées, 
-    le front-end a été développé en React ce pendant j’ai créé des composants applicatifs avec ReactJS 
-    qu’il est hébergés sur Vercel et connectés à une API. En ce qui concerne le back-end, on a choisi 
-    NODEJS et MongoDB.`,
+    une répartition des `,
   titleVercel: "😀 Le site est accessible sur ",
   linkVercel: "https://wonderflower.vercel.app/",
   erre: "(attention, il n'est pas encore compatible avec les appareils mobiles.) 💪",

@@ -23,7 +23,7 @@ function Nav() {
         <img src={logo} alt="r logo" width="50px" />
       </div>
 
-      <button className="nav__burger" onClick={handleClick}>
+      <button className="nav__burger" onClick={handleClick}> 
         <FontAwesomeIcon icon={faBars} />
       </button>
 
