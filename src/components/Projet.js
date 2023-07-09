@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import datavizeMobilAcuil from "../images/datavize_mobil_acuil.jpg";
 import datavizePcAcuil from "../images/plus info netflix clone.png";
+import ventDeFleur from "../images/vent-fleur1.png";
+import basketVentFleur from "../images/baket-vent-fleur.png";
+import neverleakAganda from "../images/neverleak_aganda.png";
+import neverleakAcuille from "../images/neverleak_acuille.jpg";
 import "./Projet.scss";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 import { gsap } from "gsap";
@@ -195,23 +199,36 @@ function Projet() {
           </div>
         </div>
       </div>
-
+      {/* =================================== image cadre1 */}
       <div className="projets__box" id="box">
-        <div className="projets__container">
+        <div className="projets__container1">
           <div className="projets__tols">
             <h2>
-              <b id="react__title"> React +</b> <b id="scss__title">SCSS</b>
+              <b style={{ color: "#014f87" }} id="react__title">
+                React +
+              </b>
+              <b style={{ color: "aqua" }} id="scss__title">
+                Tailwindecss
+              </b>
+            </h2>
+            <h2 style={{ textAlign: "center" }}>
+              <b style={{ color: "#34c334" }} id="react__title">
+                NodeJS,
+              </b>
+              <b style={{ color: "green" }} id="scss__title">
+                MongoDB
+              </b>
             </h2>
           </div>
 
-          <div className="projets__images">
-            <div className="projets__imagepc">
-              <img src={datavizePcAcuil} alt="datavize" width="100%" />
+          <div className="projets__images1">
+            <div className="projets__imagepc1">
+              <img src={ventDeFleur} alt="datavize" width="100%" />
             </div>
-            <div className="projets__imagemobil">
-              <div className="imagemobil__container">
+            <div className="projets__imagemobil1">
+              <div className="imagemobil__container1">
                 <img
-                  src={datavizeMobilAcuil}
+                  src={basketVentFleur}
                   alt="datavize"
                   width="100%"
                   height="200px"
@@ -265,12 +282,21 @@ function Projet() {
           </p>
         </div>
       </div>
-
+      {/* ========================================== image cadre 2 */}
       <div className="projets__box" id="box1">
         <div className="projets__container">
           <div className="projets__tols">
             <h2>
-              <b id="react__title"> React +</b> <b id="scss__title">SCSS</b>
+              <b style={{ color: "#eeefef" }} id="react__title">
+                {" "}
+                React
+              </b>{" "}
+              <b style={{ color: "#eeefef" }} id="react__title">
+                +
+              </b>
+              <b style={{ color: "#b313d3" }} id="scss__title">
+                SCSS
+              </b>
             </h2>
           </div>
 
@@ -335,23 +361,31 @@ function Projet() {
           </p>
         </div>
       </div>
-
+      {/* ========================================= image cadre 3 */}
       <div className="projets__box" id="box2">
-        <div className="projets__container">
+        <div className="projets__container3">
           <div className="projets__tols">
             <h2>
-              <b id="react__title"> React +</b> <b id="scss__title">SCSS</b>
+              <b style={{ color: "#e4fbff" }} id="react__title">
+                React Native
+              </b>
+              <b style={{ color: "#e4fbff" }} id="react__title">
+                +
+              </b>
+              <b style={{ color: "#c6ebc8" }} id="scss__title">
+                Supabase
+              </b>
             </h2>
           </div>
 
-          <div className="projets__images">
-            <div className="projets__imagepc">
-              <img src={datavizePcAcuil} alt="datavize" width="100%" />
+          <div className="projets__images3">
+            <div className="projets__imagepc3">
+              <img src={neverleakAcuille} alt="datavize" width="100%" />
             </div>
-            <div className="projets__imagemobil">
-              <div className="imagemobil__container">
+            <div className="projets__imagemobil3">
+              <div className="imagemobil__container3">
                 <img
-                  src={datavizeMobilAcuil}
+                  src={neverleakAganda}
                   alt="datavize"
                   width="100%"
                   height="200px"
