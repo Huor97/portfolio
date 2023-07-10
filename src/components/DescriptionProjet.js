@@ -12,8 +12,11 @@ function DescriptionProjet({ skillsTechs, title }) {
           <div className="projet__name" key={index}>
             <h3 className="projet__title">{tabTitleSkill.title}</h3>
             <ul className="projet__lists">
-              {tabTitleSkill.skills.map((skills) => (
-                <li className="projet__list"> {skills} </li>
+              {tabTitleSkill.skills.map((skills, index) => (
+                <li className="projet__list" key={index}>
+                  {" "}
+                  {skills}{" "}
+                </li>
               ))}
             </ul>
           </div>

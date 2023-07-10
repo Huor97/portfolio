@@ -35,8 +35,11 @@ function TechnicalSkills() {
           <div className="skilsT__name" key={index}>
             <h3 className="skils__title">{skillsTech.title}</h3>
             <ul className="skils__lists">
-              {skillsTech.skills.map((skills) => (
-                <li className="skils__list"> {skills} </li>
+              {skillsTech.skills.map((skills, index) => (
+                <li className="skils__list" key={index}>
+                  {" "}
+                  {skills}{" "}
+                </li>
               ))}
             </ul>
           </div>

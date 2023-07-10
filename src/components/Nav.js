@@ -20,10 +20,12 @@ function Nav() {
       } `}
     >
       <div className="nav__logo">
-        <img src={logo} alt="r logo" width="50px" />
+        <a href="/">
+          <img src={logo} alt="r logo" width="50px" />
+        </a>
       </div>
 
-      <button className="nav__burger" onClick={handleClick}> 
+      <button className="nav__burger" onClick={handleClick}>
         <FontAwesomeIcon icon={faBars} />
       </button>
 

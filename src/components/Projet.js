@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import datavizeMobilAcuil from "../images/datavize_mobil_acuil.jpg";
+import datavizeMobilDescription from "../images/datavize_mobil_info.jpg";
 import datavizePcAcuil from "../images/plus info netflix clone.png";
 import ventDeFleur from "../images/vent-fleur1.png";
 import basketVentFleur from "../images/baket-vent-fleur.png";
@@ -279,12 +280,7 @@ function Projet() {
             </div>
             <div className="projets__imagemobil1">
               <div className="imagemobil__container1">
-                <img
-                  src={basketVentFleur}
-                  alt="datavize"
-                  width="100%"
-                  height="200px"
-                />
+                <img src={basketVentFleur} alt="datavize" />
               </div>
             </div>
           </div>
@@ -310,33 +306,6 @@ function Projet() {
             skillsTechs={projectDescription2}
             title="Projet Dataviz Movies"
           />
-
-          {/* <h2>Projet e-commerce Vente de fleurs</h2>
-          <p className="projets__paragraphe">
-            Site e-commerce de vente de fleurs : ce projet a été réalisé en
-            équipe de 9 personnes. 👪 Tout d'abord, nous avons consacré 2 jours
-            à la conception des choix d'architecture technique et des
-            fonctionnalités 👥 Cependant, la gestion de projet s'est faite en
-            mode Agile/MVP, avec une répartition des
-            <a
-              href="https://wonderflower.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              vercel
-            </a>
-            <span>
-              attention, il n'est pas encore compatible avec les appareils
-              mobiles 💪
-            </span>
-            <a
-              href="https://github.com/adatechschool/projet_collectif_vente_de_fleurs-FRONTEND"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github
-            </a>
-          </p> */}
         </div>
       </div>
       {/* ========================================== image cadre 2 */}
@@ -363,12 +332,10 @@ function Projet() {
             </div>
             <div className="projets__imagemobil">
               <div className="imagemobil__container">
-                <img
-                  src={datavizeMobilAcuil}
-                  alt="datavize"
-                  width="100%"
-                  height="200px"
-                />
+                <img src={datavizeMobilAcuil} alt="datavize" />
+              </div>
+              <div className="imagemobil__container show--mobil">
+                <img src={datavizeMobilDescription} alt="datavize" />
               </div>
             </div>
           </div>
@@ -442,16 +409,11 @@ function Projet() {
 
           <div className="projets__images3">
             <div className="projets__imagepc3">
-              <img src={neverleakAcuille} alt="datavize" width="100%" />
+              <img src={neverleakAcuille} alt="datavize" />
             </div>
             <div className="projets__imagemobil3">
               <div className="imagemobil__container3">
-                <img
-                  src={neverleakAganda}
-                  alt="datavize"
-                  width="100%"
-                  height="200px"
-                />
+                <img src={neverleakAganda} alt="datavize" />
               </div>
             </div>
           </div>
