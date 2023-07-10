@@ -8,70 +8,10 @@
     display: flex;
     width: 80%;
     .projets__title {
-      display: flex;
-      flex-direction: column;
       width: 100%;
-      margin-left: 15px;
+      margin-right: 0;
+      margin-left: 12px;
       position: relative;
-      @media screen and (min-width: 678px) {
-        width: 70%;
-        .projets__paragraphe {
-          font-weight: lighter;
-        }
-      }
-      h2 {
-        margin-top: -5px;
-        margin-bottom: 10px;
-        font-family: "Cinzel", serif;
-        font-weight: 100;
-      }
-      // p {
-      //   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      //   font-weight: lighter;
-      //   padding: 32px 32px;
-      //   a {
-      //     text-decoration: none;
-      //     color: blue;
-      //     font-weight: 400;
-      //   }
-      // }
-      ul {
-        list-style: none;
-        margin-bottom: 10px;
-      }
-      li {
-        padding: 3px 1%;
-      }
-
-      @media screen and (min-width: 768px) {
-        .projets__lists {
-          display: flex;
-          flex-direction: column;
-          align-items: baseline;
-          .projets__cadres {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
-            .projets__tachs {
-              width: 48%;
-            }
-            .projets__techs {
-              width: 48%;
-            }
-          }
-          .projets__presentations {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
-            .projset__presentation {
-              width: 45%;
-            }
-            .projets__pres {
-              width: 52%;
-            }
-          }
-        }
-      }
     }
     .projets__lines {
       width: 8px;

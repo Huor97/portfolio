@@ -44,8 +44,29 @@
       display: flex;
       justify-content: space-around;
       width: 100%;
+      @media screen and (max-width: 677.99px) {
+        flex-direction: column;
+      }
       .experiences__images {
         display: flex;
+
+        @media screen and (max-width: 677.99px) {
+          align-items: center;
+          text-align: center;
+          .titles--mobile {
+            width: 80%;
+            font-size: 1.1rem;
+            font-family: "Cinzel", serif;
+          }
+          .experiences__image {
+            margin-left: 5px;
+          }
+        }
+        @media screen and (min-width: 678px) {
+          .titles--mobile {
+            display: none;
+          }
+        }
         .experiences__image {
           width: 50px;
           .experiences__logo {
@@ -60,14 +81,19 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 70%;
+        width: 100%;
+        padding: 12px 4%;
         @media screen and (min-width: 768px) {
           width: 85%;
+          padding: 0;
         }
 
-        h2 {
+        .titles--web {
           font-size: 1.1rem;
           font-family: "Cinzel", serif;
+          @media screen and (max-width: 677.99px) {
+            display: none;
+          }
         }
         p {
           text-align: justify;
