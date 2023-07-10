@@ -8,70 +8,10 @@
     display: flex;
     width: 80%;
     .projets__title {
-      display: flex;
-      flex-direction: column;
       width: 100%;
-      margin-left: 15px;
+      margin-right: 0;
+      margin-left: 12px;
       position: relative;
-      @media screen and (min-width: 678px) {
-        width: 70%;
-        .projets__paragraphe {
-          font-weight: lighter;
-        }
-      }
-      h2 {
-        margin-top: -5px;
-        margin-bottom: 10px;
-        font-family: "Cinzel", serif;
-        font-weight: 100;
-      }
-      // p {
-      //   font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      //   font-weight: lighter;
-      //   padding: 32px 32px;
-      //   a {
-      //     text-decoration: none;
-      //     color: blue;
-      //     font-weight: 400;
-      //   }
-      // }
-      ul {
-        list-style: none;
-        margin-bottom: 10px;
-      }
-      li {
-        padding: 3px 1%;
-      }
-
-      @media screen and (min-width: 768px) {
-        .projets__lists {
-          display: flex;
-          flex-direction: column;
-          align-items: baseline;
-          .projets__cadres {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
-            .projets__tachs {
-              width: 48%;
-            }
-            .projets__techs {
-              width: 48%;
-            }
-          }
-          .projets__presentations {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 10px;
-            .projset__presentation {
-              width: 45%;
-            }
-            .projets__pres {
-              width: 52%;
-            }
-          }
-        }
-      }
     }
     .projets__lines {
       width: 8px;
@@ -115,21 +55,18 @@
       display: flex;
       justify-content: flex-start;
     }
-
-    .projets__container {
+    // ============================ partie cadre image projet 1
+    .projets__container1 {
       width: 90%;
       border-radius: 0px 5px 0px 0;
       @media screen and (min-width: 678px) {
         width: 80%;
-        box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
-        -webkit-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
-        -moz-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
       }
-      background: rgb(0, 74, 173);
+      background: rgb(251, 249, 249);
       background: linear-gradient(
         90deg,
-        rgba(0, 74, 173, 1) 0%,
-        rgba(203, 108, 230, 1) 100%
+        rgba(251, 249, 249, 1) 0%,
+        rgba(151, 150, 150, 1) 100%
       );
       box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
       -webkit-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
@@ -142,11 +79,47 @@
       .projets__tols {
         h2 {
           margin-bottom: 10px;
-          #react__title {
-            color: #eeefef;
+        }
+      }
+
+      .projets__images1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+        .projets__imagepc1 {
+          width: 90%;
+          @media screen and (min-width: 768px) {
+            width: 55%;
+            padding-top: 15px;
+            margin-bottom: -17px;
+            margin-left: -57px;
           }
-          #scss__title {
-            color: #b313d3;
+        }
+        .projets__imagemobil1 {
+          width: 90%;
+          @media screen and (min-width: 768px) {
+            width: 570px;
+            z-index: 1;
+            position: absolute;
+            right: 30%;
+          }
+          .imagemobil__container1 {
+            width: 120px;
+
+            @media screen and (min-width: 768px) {
+              width: 100%;
+              img {
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+                -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+                -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              }
+            }
           }
         }
       }
@@ -187,6 +160,207 @@
                 -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
                 -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ============================ partie cadre image projet 2
+  .projets__container {
+    width: 90%;
+    border-radius: 0px 5px 0px 0;
+    @media screen and (min-width: 678px) {
+      width: 80%;
+      box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+      -webkit-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+      -moz-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+    }
+    background: rgb(0, 74, 173);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 74, 173, 1) 0%,
+      rgba(203, 108, 230, 1) 100%
+    );
+    box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    -webkit-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    -moz-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    padding: 12px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projets__tols {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h2 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 17px 4%;
+        b {
+          padding: 10px;
+        }
+      }
+    }
+
+    .projets__images {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+      .projets__imagepc {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 55%;
+          padding-top: 15px;
+        }
+      }
+      .projets__imagemobil {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 570px;
+          z-index: 1;
+          position: absolute;
+          right: 30%;
+        }
+        .imagemobil__container {
+          width: 120px;
+
+          @media screen and (min-width: 768px) {
+            width: 100%;
+            img {
+              height: 300px;
+              border-radius: 10px;
+              box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+            }
+          }
+        }
+      }
+    }
+
+    .projets__images {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+      .projets__imagepc {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 65%;
+          padding-top: 15px;
+          padding-bottom: 25px;
+        }
+      }
+      .projets__imagemobil {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 200px;
+          z-index: 1;
+          position: absolute;
+          right: 30%;
+        }
+        .imagemobil__container {
+          width: 120px;
+
+          @media screen and (min-width: 768px) {
+            width: 100%;
+            img {
+              height: 400px;
+              border-radius: 5px;
+              box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ============================ partie cadre image projet 3
+  .projets__container3 {
+    width: 90%;
+    border-radius: 0px 5px 0px 0;
+    @media screen and (min-width: 678px) {
+      width: 80%;
+      box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+      -webkit-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+      -moz-box-shadow: 56px 4px 64px -12px rgba(0, 0, 0, 0.63) inset;
+    }
+    background: rgb(137, 198, 187);
+    background: linear-gradient(
+      90deg,
+      rgba(137, 198, 187, 1) 0%,
+      rgba(41, 101, 117, 1) 100%
+    );
+    box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    -webkit-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    -moz-box-shadow: 0px 0px 82px -4px rgba(35, 35, 35, 0.3);
+    padding: 12px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projets__tols {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h2 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 17px;
+        b {
+          padding: 10px;
+        }
+      }
+    }
+
+    .projets__images3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+      .projets__imagepc3 {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 20%;
+          padding: 17px 1%;
+        }
+      }
+      .projets__imagemobil3 {
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          width: 40%;
+        }
+        .imagemobil__container3 {
+          width: 120px;
+
+          @media screen and (min-width: 768px) {
+            width: 100%;
+            img {
+              height: 300px;
+              border-radius: 10px;
+              box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -webkit-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
+              -moz-box-shadow: 0px 18px 35px -13px rgba(0, 0, 0, 0.66);
             }
           }
         }

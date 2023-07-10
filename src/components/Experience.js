@@ -27,9 +27,10 @@ function Experience({
                 alt="entrepris icon"
               />
             </div>
+            <h2 className="titles--mobile">{titleEx}</h2>
           </div>
           <div className="experiences__titles">
-            <h2>{titleEx}</h2>
+            <h2 className="titles--web">{titleEx}</h2>
             <p>{subtitl}</p>
           </div>
         </div>
