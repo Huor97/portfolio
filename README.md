@@ -6,4 +6,4 @@
 ![sweetAlert](https://img.shields.io/badge/sweetAlert-2.1.2-%23f28b74)
 
 le lien vers mon
-[portfolio.]("https://portfolio-huor97.vercel.app/")
+[portfolio.](https://portfolio-huor97.vercel.app/)

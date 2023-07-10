@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import "./Footer.scss";
 import TechnicalSkills from "./TechnicalSkills";
+import { Link as ScrollLink } from "react-scroll";
 
 function Footer() {
   library.add(faTwitter, faGithubAlt, faStackOverflow, faLinkedinIn);
@@ -55,7 +56,16 @@ function Footer() {
       </div>
       <div className="logo">
         {" "}
-        <img src={logo} alt="r logo" width="50px" />
+        <ScrollLink
+          to="header"
+          spy={true}
+          smooth={true}
+          offset={-75}
+          duration={500}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={logo} alt="r logo" width="50px" />
+        </ScrollLink>
       </div>
     </div>
   );

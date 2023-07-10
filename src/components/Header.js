@@ -66,7 +66,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="banner">
+    <header className="banner" id="header">
       <div className="banner__presention">
         <div className="vertical" id="line1">
           <div className="vertical__line"></div>
