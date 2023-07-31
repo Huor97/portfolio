@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Header.scss";
-import Resume from "../images/karimi_alternance_CV_dévelppeur full stack_2023-2024.pdf";
+import Resume from "../images/karimi_cv_developper full stack_2023-2024.pdf";
 import { gsap } from "gsap";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 
