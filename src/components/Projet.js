@@ -276,7 +276,12 @@ function Projet() {
 
           <div className="projets__images1">
             <div className="projets__imagepc1">
-              <img src={ventDeFleur} alt="datavize" width="100%" />
+              <img
+                src={ventDeFleur}
+                alt="datavize"
+                width="100%"
+                height="auto"
+              />
             </div>
             <div className="projets__imagemobil1">
               <div className="imagemobil__container1">
@@ -328,7 +333,12 @@ function Projet() {
 
           <div className="projets__images">
             <div className="projets__imagepc">
-              <img src={datavizePcAcuil} alt="datavize" width="100%" />
+              <img
+                src={datavizePcAcuil}
+                alt="datavize"
+                width="100%"
+                height="auto"
+              />
             </div>
             <div className="projets__imagemobil">
               <div className="imagemobil__container">
