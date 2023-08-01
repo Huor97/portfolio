@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Projet from "./components/Projet";
 import Experience from "./components/Experience";
-import planSudeLogo from "../src/images/Logosolei.png";
+import planSudeLogo from "../src/images/Logosolei.jpg";
 import helloGolf from "../src/images/helloGolf-icon.jpg";
 
 const experHelloGolf = [
