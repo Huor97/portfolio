@@ -6,7 +6,7 @@ import datavizeMobilDescription from "../images/datavize_mobil_info.jpg";
 import datavizePcAcuil from "../images/plus info netflix clone.jpg";
 import ventDeFleur from "../images/vent-fleur1.jpg";
 import basketVentFleur from "../images/baket-vent-fleur.jpg";
-import neverleakAganda from "../images/neverleak_aganda.png";
+import neverleakAganda from "../images/neverleak_aganda.jpg";
 import neverleakAcuille from "../images/neverleak_acuille.jpg";
 import "./Projet.scss";
 import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
