@@ -64,7 +64,7 @@ function Footer() {
           duration={500}
           style={{ cursor: "pointer" }}
         >
-          <img src={logo} alt="r logo" width="50px" />
+          <img src={logo} alt="r logo" width="50px" height="auto" />
         </ScrollLink>
       </div>
     </div>

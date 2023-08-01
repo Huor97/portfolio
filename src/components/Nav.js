@@ -21,7 +21,7 @@ function Nav() {
     >
       <div className="nav__logo">
         <a href="/">
-          <img src={logo} alt="r logo" width="50px" />
+          <img src={logo} alt="r logo" width="50px" height="auto" />
         </a>
       </div>
 
