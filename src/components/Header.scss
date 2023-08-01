@@ -144,8 +144,6 @@
         font-weight: bold;
         transition-duration: 0.4s;
         box-shadow: 3px 4px 42px -10px rgba(42, 242, 112, 0.88);
-        -webkit-box-shadow: 3px 4px 42px -10px rgba(99, 242, 42, 0.88);
-        -moz-box-shadow: 3px 4px 42px -10px rgba(42, 242, 189, 0.88);
         cursor: pointer;
         &:hover {
           background: rgb(0, 110, 255);
@@ -156,8 +154,6 @@
           );
           color: #fff;
           box-shadow: 3px 4px 42px -10px rgba(0, 110, 255, 0.88);
-          -webkit-box-shadow: 3px 4px 42px -10px rgba(0, 110, 255, 0.88);
-          -moz-box-shadow: 3px 4px 42px -10px rgba(0, 110, 255, 0.88);
         }
       }
     }
